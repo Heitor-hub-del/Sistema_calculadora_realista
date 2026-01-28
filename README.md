@@ -1,0 +1,1 @@
+esta e uma calculadora que comsegue fazer calculos que nem de celular e loops e saidas e open source, pode fazer fork se quiser ou pull request para sujestoes de melhorias ou de correção de bugs na aba de issues. temos por enquanto temos duas versoes desse projeto mas se quiserem dar sugestoes eu estou a disposto
