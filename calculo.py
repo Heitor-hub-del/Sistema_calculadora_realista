@@ -1,15 +1,14 @@
 import time
 import math
 
-
 def iniciar():
     print("iniciando.....")
 
     time.sleep(2)
-    print("bem vindo a calculadora realista!   v1.3")
+    print("bem vindo a calculadora realista!   v1.3.1")
 
     input1 = input("qual calculo voce deseja fazer?  1.soma 2.subtração 3.multiplicação" \
-    " 4.divisão 5.potencialização,6. fazer um loop,  7. porcentagem, 8. fatorial, 9. diferenciar numeros, 10.converter tempo, 11: fazer calculos com letras ou palavras, 12. sair : ")
+    " 4.divisão 5.potencialização,6. fazer um loop,  7. porcentagem, 8. fatorial, 9. diferenciar numeros, 10.converter tempo, 11: fazer calculos com letras ou palavras, 12. formação de palavras, 13.usar os conceitos matematicos (coseno) , 14. sair : ")
 
     print("processando...")
 
@@ -288,17 +287,150 @@ def iniciar():
 
             
     elif input1 == "12":
-            certeza = input("tem certeza que deseja sair? 1.sim 2.não:")
+            certeza = input("tem certeza que deseja continuar? 1.sim 2.não:")
 
             if certeza == "1":
-                print("saindo.....")
-                time.sleep(2)
+                palavra1 = input("digite a primeira palavra:")
+                palavra2 = input("digite a segunda palavra:")
 
+                palavra_combinar_resultado = palavra1 + palavra2
+
+                print(palavra_combinar_resultado)
+                
             else:
                 print("reniciando.....")
                 time.sleep(2)
                 iniciar()
 
+    elif input1 == "13":
+        certeza = input("tem certeza que deseja continuar? 1.sim 2.não:")
+
+        if certeza == "1":
+            print("uso de conceitos selecionado")
+
+            conceito_input = input("qual conceito voce quer fazer? 1. cos, 2. sin, 3. tan, 4. atan , 5. acosh,  6. asinh, 7. asin, 8. cosh , 9. atan2 , 10. atanh, 11. sinh, 12. log 13. log2 , 14. log10, 15. log1p :")
+
+        if conceito_input == "1":
+            num1 = int(input("digite um numero:"))
+
+            cos_resultado = math.cos(num1)
+
+            print(f"o resultado e: {cos_resultado}")
+
+        elif conceito_input == "2":
+            num1 = int(input("digite um numero:"))
+
+            sin_resultado = math.sin(num1)
+
+            print(f"o resultado e: {sin_resultado}")
+
+        elif conceito_input == "3":
+            num1 = int(input("digite um numero:"))
+
+            tan_resultado = math.tan(num1)
+
+            print(f"o resultado e: {tan_resultado}")
+
+        elif conceito_input == "4":
+            num1 = int(input("digite um numero:"))
+
+            atan_resultado = math.atan(num1)
+
+            print(f"o resultado e: {atan_resultado}")
+
+        elif conceito_input == "5":
+            num1 = int(input("digite um numero:"))
+
+            acosh_resultado = math.acosh(num1)
+
+            print(f"o resultado e: {acosh_resultado}")
+            
+        elif conceito_input == "6":
+            num1 = int(input("digite um numero:"))
+
+            asinh_resultado = math.asinh(num1)
+
+            print(f"o resultado e: {asinh_resultado}")
+            
+        elif conceito_input == "7":
+            num1 = int(input("digite um numero:"))
+
+            asin_resultado = math.asin(num1)
+
+            print(f"o resultado e: {asinh_resultado}")
+
+        elif conceito_input == "8":
+            num1 = int(input("digite um numero:"))
+
+            cosh_resultado = math.cosh(num1)
+
+            print(f"o resultado e: {cosh_resultado}")
+
+        elif conceito_input == "9":
+            num1 = int(input("digite um numero:"))
+
+            atan2_resultado = math.atan2(num1)
+
+            print(f"o resultado e: {atan2_resultado}")
+
+        elif conceito_input == "10":
+             num1 = int(input("digite um numero:"))
+
+             atanh_resultado = math.atanh(num1)
+
+             print(f"o resultado e: {atanh_resultado}")
+
+        elif conceito_input == "11":
+            num1 = int(input("digite um numero:"))
+
+            sinh_resultado = math.sinh(num1)
+
+            print(f"o resultado e: {sinh_resultado}")
+
+        elif conceito_input == "12":
+            num1 = int(input("digite um numero:"))
+
+            log_resultado = math.log(num1)
+
+            print(f"o resultado e: {log_resultado}")
+
+        elif conceito_input == "13":
+            num1 = int(input("digite um numero:"))
+
+            log2_resultado = math.log2(num1)
+
+            print(f"o resultado e: {log2_resultado}")
+
+        elif conceito_input == "14":
+            num1 = int(input("digite um numero:"))
+
+            log10_resultado = math.log10(num1)
+
+            print(f"o resultado e: {log10_resultado}")
+
+        elif conceito_input == "15":
+            num1 = int(input("digite um numero:"))
+
+            log1p_resultado = math.log1p(num1)
+
+            print(f"o resultado e: {log1p_resultado}")
+
+    elif input1 == "14":
+        certeza = input("tem certeza que deseja sair? 1. sim 2. não :")
+
+        if certeza == "1":
+            print("saindo")
+
+        else:
+            print("reniciando")
+            time.sleep(2)
+            iniciar()
+
+
+             
+
+
 iniciar()
+
 
 
