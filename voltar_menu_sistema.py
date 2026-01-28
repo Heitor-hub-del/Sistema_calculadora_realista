@@ -1,13 +1,9 @@
+
 import time
 import math
-import voltar_menu_sistema
 
-def iniciar():
-    print("iniciando.....")
-
-    time.sleep(2)
-    print("bem vindo a calculadora realista!   v1.3.2")
-
+def voltar_menu():
+    
     print("1. soma")
     print("2. subtração")
     print("3. multiplicação")
@@ -44,7 +40,7 @@ def iniciar():
         else:
             print("voltando ao menu....")
             time.sleep(2)
-            voltar_menu_sistema.voltar_menu()
+            voltar_menu()
             
 
         resultado_da_soma = num1 + num2 
@@ -66,7 +62,7 @@ def iniciar():
         else:
             print("voltando ao menu....")
             time.sleep(2)
-            voltar_menu_sistema.voltar_menu()
+            voltar_menu()
 
         resultado_da_subtração = num1 - num2 
 
@@ -88,8 +84,7 @@ def iniciar():
         else:
             print("voltando ao menu....")
             time.sleep(2)
-            voltar_menu_sistema.voltar_menu()
-
+            voltar_menu()
         resultado_da_multiplicação = num1 * num2
 
         print(f"o resultado e: {resultado_da_multiplicação}")
@@ -109,7 +104,7 @@ def iniciar():
         else:
             print("voltando ao menu....")
             time.sleep(2)
-            voltar_menu_sistema.voltar_menu()
+            voltar_menu()
 
         resultado_da_divisão = num1 / num2 
 
@@ -129,8 +124,7 @@ def iniciar():
     
         else:
             print("voltando ao menu....")
-            time.sleep(2)
-            voltar_menu_sistema.voltar_menu()
+            voltar_menu()
 
         resultado_da_potencialização = num1 ** num2 
 
@@ -150,7 +144,7 @@ def iniciar():
         else:
             print("voltando ao menu....")
             time.sleep(2)
-            voltar_menu_sistema.voltar_menu()
+            voltar_menu()
 
         for i in range(input_loop + 1):
             print(i)
@@ -173,8 +167,7 @@ def iniciar():
 
         elif certeza == "2":
             print("voltando ao menu....")
-            time.sleep(2)
-            voltar_menu_sistema.voltar_menu()
+            voltar_menu()
             
 
     elif input1 == "8":
@@ -190,7 +183,7 @@ def iniciar():
         else:
             print("voltando ao menu....")
             time.sleep(2)
-            voltar_menu_sistema.voltar_menu()
+            voltar_menu()
 
         num1 = int(input("digite o primeiro numero:"))
         num2 = int(input("digite o segundo numero:"))
@@ -213,8 +206,7 @@ def iniciar():
 
         else:
             print("voltando ao menu....")
-            time.sleep(2)
-            voltar_menu_sistema.voltar_menu()
+            voltar_menu()
 
         numero_diferença = input("digite o < ou > ou = para saber qual numero sera comparado do maior ou do menor ou igual:")
 
@@ -250,8 +242,7 @@ def iniciar():
         else:
             print("voltando ao menu....")
             time.sleep(2)
-            voltar_menu_sistema.voltar_menu()
-
+            voltar_menu()
 
             print("1. segundos para minutos")
             print("2. minutos para horas")
@@ -318,7 +309,7 @@ def iniciar():
         else:
             print("voltando ao menu....")
             time.sleep(2)
-            voltar_menu_sistema.voltar_menu()
+            voltar_menu()
 
         palavra_sinal = input("qual operação voce deseja fazer com as palavras? 1.soma 2.subtração 3.multiplicação 4.divisão 5. potencialização  :")
 
@@ -376,7 +367,7 @@ def iniciar():
             else:
                 print("voltando ao menu....")
                 time.sleep(2)
-                voltar_menu_sistema.voltar_menu()
+                voltar_menu()
 
     elif input1 == "13":
 
@@ -391,7 +382,7 @@ def iniciar():
         elif certeza == "2":
             print("voltando ao menu....")
             time.sleep(2)
-            voltar_menu_sistema.voltar_menu()
+            voltar_menu()
 
             print("1. cos")
             print("2. sin")
@@ -528,14 +519,10 @@ def iniciar():
             print("saindo")
 
         else:
-            print("voltando ao menu....")
-            time.sleep(2)
-            voltar_menu_sistema.voltar_menu()
+            voltar_menu()
+            
 
              
-
-
-iniciar()
 
 
 
