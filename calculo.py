@@ -178,7 +178,6 @@ def iniciar():
             
 
     elif input1 == "8":
-
         print("1. sim")
         print("2. não")
 
@@ -193,11 +192,11 @@ def iniciar():
             voltar_menu_sistema.voltar_menu()
 
         num1 = int(input("digite o primeiro numero:"))
-        num2 = int(input("digite o segundo numero:"))
 
         resultado_da_fatorial = math.factorial(num1)
 
         print(f"o resultado e: {resultado_da_fatorial}")
+
 
     elif input1 == "9":
 
@@ -536,6 +535,4 @@ def iniciar():
 
 
 iniciar()
-
-
 

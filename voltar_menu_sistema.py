@@ -170,8 +170,8 @@ def voltar_menu():
             voltar_menu()
             
 
-    elif input1 == "8":
-
+    elif certeza == "8":
+        pass
         print("1. sim")
         print("2. não")
 
@@ -186,13 +186,16 @@ def voltar_menu():
             voltar_menu()
 
         num1 = int(input("digite o primeiro numero:"))
-        num2 = int(input("digite o segundo numero:"))
 
         resultado_da_fatorial = math.factorial(num1)
 
         print(f"o resultado e: {resultado_da_fatorial}")
 
+        
+
+
     elif input1 == "9":
+    
 
         print("1. sim")
         print("2. não")
