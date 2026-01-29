@@ -23,7 +23,7 @@ def fatorial(input1):
             print("2. não")
             print("3. fazer fatorial com operadores")
 
-            sujestão_fatorial = input("gostaria de fazer mais um fatorial ou fazer fatorial com frações?:")
+            sujestão_fatorial = input("gostaria de fazer mais um fatorial ou fazer fatorial com operadores?:")
 
             if sujestão_fatorial == "1":
                 fatorial(input1)
