@@ -15,7 +15,9 @@ import conversor_tempo_sistema
 import calculo_palavras_sistema
 import formação_palavras_sistema
 import conceitos_sistema
+import consultar_valores_sistema_volta
 import saida_sistema
+
 
 def voltar_menu():
     
@@ -32,7 +34,7 @@ def voltar_menu():
     print("11. fazer calculos com letras ou palavras")
     print("12. formação de palavras")
     print("13. usar os conceitos matematicos")
-    print("14. sair")
+    print("14. consultar valores")
 
     input1 = input("digite o numero do calculo que deseja fazer:")
 
@@ -86,7 +88,8 @@ def voltar_menu():
 
 
     elif input1 == "14":
-        saida_sistema.saida()
+        consultar_valores_sistema_volta.valores_sistema_voltar(input1)
+        
         
             
 
