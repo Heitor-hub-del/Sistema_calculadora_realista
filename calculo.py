@@ -23,7 +23,7 @@ def iniciar():
     print("iniciando.....")
 
     time.sleep(2)
-    print("bem vindo a calculadora realista!   v1.3.3")
+    print("bem vindo a calculadora realista!   v1.5")
 
     print("1. soma")
     print("2. subtração")
